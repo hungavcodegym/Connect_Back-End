@@ -11,8 +11,6 @@ import {Router} from '@angular/router';
 export class ProductListComponent implements OnInit {
 
   productList: Product[];
-  buyItems = 0;
-  isFormHidden = true;
 
   constructor(private productService: ProductService,
               private router: Router) {
@@ -20,14 +18,6 @@ export class ProductListComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  addToCart(product: Product) {
-    this.buyItems += product.price;
-  }
-
-  showFormAdd() {
-    this.isFormHidden = !this.isFormHidden;
   }
 
   addProduct(product: Product) {

@@ -35,6 +35,7 @@ export class ProductEditComponent implements OnInit {
   onSubmit() {
     this.productService.editProduct(this.productForm.value).subscribe(result => {
       alert('sua thanh cong!');
+      this.route.navigate(['']);
     });
   }
 
