@@ -1,0 +1,5 @@
+<div class="row">
+  <div class="col-4" *ngFor="let item of productList" style="padding-top: 10px">
+    <app-product [product]="item" (buyClick)="addProduct(item)" (delete)="updateList()" (edit)="goToEdit(item)"></app-product>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem; height: 350px">
+  <img [src]="product.image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{product.name}}</h5>
+    <p class="card-text">{{product.description}}</p>
+
+    <button>Mua hang</button>
+    <button (click)="editProduct()">Sua</button>
+    <button (click)="deleteProduct()">Xoa</button>
+  </div>
+</div>
